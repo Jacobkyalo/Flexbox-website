@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url(./images/phone.jpeg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    font-weight: bolder;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+#wrapper{
+    max-width: 80%;
+    margin: auto;
+}
+.flex-container{
+padding: 10px;
+    
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255,.7);
+    box-shadow: 2px 2px 12px,black;
+    color: #000;
+    padding: 10px;
+
+}
+#navbar h3{
+    font-size: 1.5em;
+    color: #000;
+}
+#links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+#links li{
+    margin-right: 2rem;
+    font-size: 20px;
+}
+#links li a{
+    text-decoration: none;
+    color: #000;
+}
+#links li a:hover{
+  text-decoration: underline;
+  animation: ease-in-out;
+}
+#donateButton{
+    background: rgb(41, 138, 41);
+    margin-top: 0px;
+    cursor: pointer;
+    color: #000;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+.heading-about {
+    margin-top: 30px;
+}
+.heading-about p{
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 30px;
+    /* color: #fff; */
+}
+.flex-daily{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align:center;
+    background: rgb(15, 15, 49,0.7);
+}
+.flex-daily p{
+    font-size: 1.5em;
+    font-style: italic;
+}
+.other p{
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+}
+.flex-other{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(15, 15, 49,0.7);
+    height: 40vh;
+    
+}
+#footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1em;
+    border-top: 2px solid orangered;
+    padding: 20px;
+}
+.flex-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.flex-links span{
+    padding-left: 40px;
+}
+#social-media-links {
+    /* list-style: none; */
+    display: flex;
+    justify-content: flex-end;
+   
+    
+}
+.fa-brands{
+    margin-right: 20px;
+}
+.other-sun {
+    padding: 20px;
+    text-align: center;
+}
+.other-sun i{
+    font-size: 50px;
+}
+.other-friends {
+    padding: 20px; 
+    text-align: center;
+}
+.other-friends i{
+    font-size: 50px;
+}
+.other-travel {
+    padding: 20px;
+    text-align: center;
+}
+.other-travel i{
+    font-size: 50px;
+}
+.other-movies {
+    padding: 20px;
+    text-align: center;
+}
+.other-movies i{
+    font-size: 50px;
+}
+.other-nature {
+    padding: 20px;
+    text-align: center;
+}
+.other-nature i{
+    font-size: 50px;
+}
+@media(max-width:768px){
+    #navbar,#links{
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    #navbar h3{
+        margin-left: 0px;
+        /* text-align: center; */
+    }
+    .flex-daily{
+        flex-direction: column;
+        height: 100%;
+    }
+    .flex-other{
+        display: block;
+        height: 100%;
+    }
+    .flex-links{
+        display: block;
+    }
+    .flex-links p, span{
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    #social-media-links a{
+        text-align: center;
+        margin: 20px auto;
+        
+    }
+}
